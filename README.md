@@ -9,4 +9,4 @@ Setup of Code:
 5. Execute npm install command.
 6. Once dependencies are installed, execute ng serve -o command.
 7. You can able to see a UI on the browser.
-![architecture](Screenshot.PNG)
+![Screenshot](Screenshot.PNG)
