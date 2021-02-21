@@ -1,0 +1,36 @@
+<div class="main-container clearfix">
+  <div class="navbar" style="justify-content: safe;  background-color: #428bca;  border-color:#428baa; ">
+      <div class="navbar-header">                  
+          <span style="left: 3px; float: left; margin-left: 5px; margin-top: 1px; color: white;">
+              <strong>Sympli Search</strong>                       
+          </span>
+      </div> 
+  </div>  
+<div>
+<br/>
+<div style="margin-left: 10%;">
+<div class = 'row'>
+<label class="col-sm-1">SearchText</label>
+<input type="search" [(ngModel)] = "searchText"/>
+</div><br/>
+<div class = 'row'>
+<label class="col-sm-1">Url</label>
+<input type="search" [(ngModel)] = "searchUrl"/>
+</div><br/>
+<div class = 'row'>
+<label class="col-sm-1">Provider</label>
+<select [(ngModel)] = "searchProvider">
+    <option value="" selected disabled hidden>Choose here</option>
+    <option *ngFor="let provider of providers;" [value]="provider">
+        {{provider}}
+    </option>
+</select>
+</div><br/>
+<div class = 'row'>
+<label class="col-sm-1">Rank</label>
+<textarea [(ngModel)] = "result">   
+</textarea>
+</div><br/>
+<button class="btn btn-sm btn-primary" style="margin-left: 10%;" type="button" (click)="onSearch()">Get Rank</button>
+</div>
+</div>
